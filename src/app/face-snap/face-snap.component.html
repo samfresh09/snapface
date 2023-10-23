@@ -1,5 +1,12 @@
-<h2>{{ title }}</h2>
-<img [src]="image" [alt]="title">
-<h4>Cree le: {{ createdAt }}</h4>
-<p>{{ description }}</p>
-<h5> {{ like }} aime</h5>
+
+
+<div class="face-snap-card">
+    <h2>{{ title }}</h2>
+    <img [src]="image" [alt]="title">
+    <h4>Cree le: {{ createdAt }}</h4>
+    <p>{{ description }}</p>
+    <h5> 
+        <button (click)="onaddLike()">{{buttonText}}</button>
+        {{ like }} aime
+    </h5>
+</div>
